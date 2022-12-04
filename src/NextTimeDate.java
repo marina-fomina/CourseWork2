@@ -1,3 +1,3 @@
 public interface NextTimeDate {
-    void getNextTimeDate();
+    String getNextTimeAndDate();
 }

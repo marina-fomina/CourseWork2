@@ -1,4 +1,4 @@
-public enum Frequency implements NextTimeDate {
+public enum Frequency {
     SINGLE ("однократная"),
     EVERYDAY ("ежедневная"),
     WEEKLY ("еженедельная"),
@@ -14,10 +14,11 @@ public enum Frequency implements NextTimeDate {
         }
     }
 
-    @Override
-    public void getNextTimeDate() {
-
-    }
+//    public boolean appearsInDate(LocalDate taskDate, LocalDate receivedDate) {
+//        switch (this) {
+//            case SINGLE:
+//        }
+//    }
 
     public String toString() {
         return "Повторяемость задачи — " + getFrequencyType();
